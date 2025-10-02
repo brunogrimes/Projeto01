@@ -31,7 +31,8 @@ body *{
 
 #container {
     /* border: 1px solid red; */
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
     /* height: 712px; */
@@ -172,3 +173,20 @@ footer {
     padding: 25px;
     font-size: large;
 } */
+ @keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}

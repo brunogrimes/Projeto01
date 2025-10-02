@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img alt="Foto Projeto DevLinks" src="https://embed.figma.com/design/pzA7gj1kbr60ZZ8PCEq1V4/DevLinks-%E2%80%A2-Projeto-Discover--Community-?node-id=1603-149&embed-host=share" width="100%">
+  <img alt="Foto Projeto DevLinks" src="./assets/Dark mode.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias

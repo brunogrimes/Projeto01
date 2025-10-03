@@ -22,7 +22,8 @@
 }
                                                 /* Fonte/BG */
 body {
-background: var(--background-url) no-repeat top center/cover;
+    background: var(--background-url) no-repeat top center/cover;
+    height: 100vh;
 }
 body *{
      font-family: "Inter", sans-serif;
@@ -79,10 +80,16 @@ body *{
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
 }
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide-in 0.4s forwards;
+    /* right: 0;
+    left: initial; */
+}
+#switch button:hover{
+    outline: 8px solid var(--surface-color);
 }
 #switch span{
     display: block;
@@ -173,20 +180,30 @@ footer {
     padding: 25px;
     font-size: large;
 } */
- @keyframes slide-in {
+                                                /* media queries */
+@media (min-width: 700px) {
+    :root {
+    --background-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+    --background-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
+                                                /* Animation */
+@keyframes slide-in{
     from {
         left: 0;
     }
-    to {
+    to{
         left: 50%;
     }
 }
-
-@keyframes slide-back {
-    from {
+@keyframes slide-back{
+    from{
         left: 50%;
     }
-    to {
+    to{
         left: 0;
     }
 }
